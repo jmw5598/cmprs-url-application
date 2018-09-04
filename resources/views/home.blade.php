@@ -4,7 +4,7 @@
 
 <div class="container">
 
-  @include('common.errors')
+
 
   <!-- Heading -->
   <h1 class="compress-title">
@@ -14,6 +14,7 @@
   <!-- Form -->
   <form action="/" method="POST" class="compress-form">
     {{ csrf_field() }}
+    @include('common.errors')
     <div class="form-group">
       <input type="text" name="url" id="url" class="form-control" placeholder="Type your lengthy url..." />
       <button role="button" class="btn-compress">&#9654;</button>
