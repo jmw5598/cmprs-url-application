@@ -11,6 +11,10 @@
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
+use App\Redirect;
+use Illuminate\Http\Request;
+use App\Http\Controllers\RedirectController;
+
+Route::get('/', 'RedirectController@index');
+Route::post('/', 'RedirectController@store');
+Route::get('/{hash}', 'RedirectController@redirect');
