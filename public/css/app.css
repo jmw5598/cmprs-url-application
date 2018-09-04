@@ -75,3 +75,10 @@ input, button {
 .container .compress-result a {
   color: #000;
 }
+
+.container .compress-form .errors {
+  background: #f2f2f2;
+  padding: 1rem;
+  min-width: 296px;
+  margin-bottom: 1rem;
+}
